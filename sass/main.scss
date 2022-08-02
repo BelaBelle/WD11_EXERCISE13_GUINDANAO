@@ -1,0 +1,16 @@
+$primary: rgb(255, 117, 193);
+$dark:rgb(21, 4, 64);
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+$original-theme-colors: (
+    "favorite1" : rgb(1, 198, 149),
+    "favorite2" : rgb(232, 181, 87)
+);
+    
+
+$theme-colors: map-merge($original-theme-colors , $theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
